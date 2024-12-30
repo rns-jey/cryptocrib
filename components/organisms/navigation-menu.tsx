@@ -1,8 +1,12 @@
 import { cn } from "@/lib/utils";
-import { Cog6ToothIcon, HomeIcon } from "@heroicons/react/24/outline";
+import { BanknotesIcon, ClipboardDocumentListIcon, Cog6ToothIcon, HomeIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
-const navigation = [{ name: "Dashboard", href: "#", icon: HomeIcon, current: true }];
+const navigation = [
+  { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
+  { name: "Assets", href: "#", icon: BanknotesIcon, current: false },
+  { name: "Orders", href: "#", icon: ClipboardDocumentListIcon, current: false },
+];
 
 export default function NavigationMenu() {
   return (
